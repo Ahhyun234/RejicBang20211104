@@ -1,10 +1,11 @@
 package com.nepplus.rejicbang20211104.RoomData
 
+import java.io.Serializable
 import java.lang.NumberFormatException
 import java.text.NumberFormat
 import java.util.*
 
-class Roomdata(val price: Int, val address: String, val floor: Int, val description: String) {
+class Roomdata(val price: Int, val address: String, val floor: Int, val description: String):Serializable {
 
     fun getFormattedPrice(): String {
 

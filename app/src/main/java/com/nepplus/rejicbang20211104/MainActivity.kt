@@ -1,5 +1,6 @@
 package com.nepplus.rejicbang20211104
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.nepplus.rejicbang20211104.RoomData.Roomdata
@@ -29,7 +30,13 @@ class MainActivity : AppCompatActivity() {
         
         roomListView.setOnItemClickListener { adapterView, view, position , l ->  }
 
-        val clickedRoom
+        val clickedRoom =mRomms[position]
+
+        val myIntent = Intent(this.ViewRoomdetail::class.java)
+        startActivity(myIntent)
+
+        myIntent.putExtra("room",clickedRoom)
+
 
     }
 }
