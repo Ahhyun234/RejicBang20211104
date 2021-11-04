@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_jicbang_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.RejicBang20211104">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".ViewRoomDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
