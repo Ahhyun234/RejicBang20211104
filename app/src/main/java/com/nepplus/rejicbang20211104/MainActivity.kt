@@ -28,14 +28,16 @@ class MainActivity : AppCompatActivity() {
         mRoomAdapter = RoomAdapter(this,R.layout.roomitemlinedesign,mRomms)
         roomListView.adapter = mRoomAdapter
         
-        roomListView.setOnItemClickListener { adapterView, view, position , l ->  }
+        roomListView.setOnItemClickListener { adapterView, view, position, l ->
 
-        val clickedRoom =mRomms[position]
+            val clickedRoom =mRomms[position]
 
-        val myIntent = Intent(this.View::class.java)
-        startActivity(myIntent)
+            val myIntent = Intent(this,ViewRoomDetailActivity ::class.java)
+            startActivity(myIntent)
 
-        myIntent.putExtra("room",clickedRoom)
+            myIntent.putExtra("room",clickedRoom)
+
+        }
 
 
     }
